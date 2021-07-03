@@ -1,0 +1,11 @@
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h1 class="panel-title">{{ convertToDate(w.dt) | date : 'd/M/yy h:mm a' : timezone }}</h1>
+    </div>
+    <div class="panel-body">
+       Day Temperature: {{w.main.temp}}
+    </div>
+    <div class="panel-body">
+        Weather: {{w.weather[0].main}}
+     </div>
+</div>
